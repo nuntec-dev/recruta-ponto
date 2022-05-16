@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @work_time %>
+
+<div>
+  <%= link_to "Editar", edit_work_time_path(@work_time) %> |
+  <%= link_to "Período de trabalho", work_times_path %>
+
+  <%= button_to "Excluir", @work_time, method: :delete %>
+</div>

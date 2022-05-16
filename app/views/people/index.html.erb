@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pessoas</h1>
+
+<div id="people">
+  <% @people.each do |person| %>
+    <%= render person %>
+    <p>
+      <%= link_to "Detalhes", person %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Cadastrar pessoa", new_person_path %>
